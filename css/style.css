@@ -19,6 +19,91 @@ body {
     padding-top: 80px;
 }
 
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 30%;
+    float: left;
+    /* position: absolute; */
+    background-color: #fff;
+    /* padding-right: 10px; */
+    margin-right: 1.33333%;
+    margin-left: 2%;
+
+
+}
+
+.col-four {
+    width: 25%;
+    float: left;
+    padding-bottom: 60px;
+    /* margin: 20px auto; */
+
+}
+
+.col-five {
+    width: 20%;
+    float: left;
+
+}
+
+.text1 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    max-width: 250px;
+    margin: 20px 0;    
+}
+
+.text2 {
+    text-transform: initial;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    margin: 20px 10px;    
+}
+
+.text3 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    max-width: 100%;
+    /* margin: 20px 10px;     */
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+.mt-32 {
+    margin-top: 32px !important;
+}
+
+
+
 #header {
     height: 80px;
     position: fixed;
@@ -118,8 +203,8 @@ body {
     background-color: #333;
 }
 
-#silde_home {
-    /* position: absolute; */
+#silde_home img{
+    width: 100%;
 }
 
 .container {
@@ -127,10 +212,15 @@ body {
     margin: auto;
 }
 
+.container2 {
+    max-width: 1300px;
+    margin: auto;
+}
 
 
 .list_cskh {
     display: flex;
+    margin-top: -33px;
 
 }
 
@@ -199,7 +289,7 @@ body {
 }
 
 .desc {
-    margin: 20px 0 0;
+    margin: 20px 30px 0;
     line-height: 1.5;
     font-size: 18px;
 }
@@ -225,11 +315,13 @@ body {
     margin-left: 0;
 }
 
+.tinHome .btn,
 .spHome .btn,
 .welcome .btn {
     text-align: center;
 }
 
+.tinHome .btn a,
 .spHome .btn a,
 .welcome .btn a {
     display: inline-block;
@@ -244,12 +336,14 @@ body {
     border-radius: 22px;
 }
 
+.tinHome .btn a:hover,
 .spHome .btn a:hover,
 .welcome .btn a:hover {
     background: #000;
     color: #ffffff;
 }
 
+.tinHome,
 .spHome {
     padding: 100px 0 50px 0;
     background-color: #3f3f3f;
@@ -258,26 +352,133 @@ body {
     color: #ffffff;
 }
 
+
+.spHome .cateSP {
+    display: block;
+    /* clear: both; */
+}
+
 .spHome .cateSP img {
     width: 250px;
     height: 250px;
     left: 1px;
     top: 1px;
     border-radius: 50%;
-    margin: 10px;
+    /* object-fit: scale-down; */
+    border: 3px solid #240000;
+    margin: 10px auto;
+
+
 }
 
+.tinHome .btn,
 .spHome .btn {
-    margin-top: 60px;
+    margin-top: 380px;
+    /* width: 100%; */
 }
-.spHome .btn a{
+
+.tinHome .btn a,
+.spHome .btn a {
     background-color: #fff;
     color: #000 ;
 }
 
+.vsChon {
+    padding: 50px 0 50px 0;
+    background-color: #1c1c1c;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
 
-
-
-/* .item {
+.vsChon .cateVS img {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    object-fit: scale-down;
     display: block;
-} */
+    margin: 40px auto;
+
+}
+
+.tinHome .list_news a {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.tinHome .list_news img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    float: left;
+    top: 0;
+    left: 0;
+    display: block;
+    position:relative
+
+}
+
+
+#footer {
+    background-color: #202020;
+    color: white;
+    padding-top: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+#footer .contact_ft {
+    width: 50%;
+    float: left;
+    /* margin-bottom: 30px;
+    /* margin-left: 30px; */ */
+
+}
+
+#footer .contact_ft .dkkd {
+    padding: 15px 100px 0 0;
+}
+
+
+#footer .menu_ft .title,
+#footer .contact_ft .title {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.upper p{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu_ft i[class*="ti-"],
+.contact_ft i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    padding: 10px 0;
+    opacity: 0.7;;
+}
+
+
+#footer .menu_ft {
+    width: calc(25% - 30px);
+    float: left;
+    margin-left: 30px;
+    display: block;
+}
+
+
+#footer .body_ft {
+    clear: both;
+    padding: 20px;
+    border-top: 1px solid #605b5b;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+}
